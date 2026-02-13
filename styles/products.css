@@ -25,6 +25,7 @@
 
 a {
     text-decoration: none;
+    color: var(--black);
 }
 
 section {
@@ -179,6 +180,183 @@ nav {
     background-color: var(--red);
     color: var(--white);
     transform: translateX(5px);
+}
+
+/* Выпадающее меню по клику */
+.click-dropdown {
+    display: none;
+    position: absolute;
+    background: var(--white);
+    border: 2px solid var(--black);
+    padding: 15px;
+    border-radius: 0;
+    flex-direction: column;
+    z-index: 1001;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 320px;
+    max-width: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.dropdown-item-container {
+    margin-bottom: 8px;
+}
+
+.dropdown-main-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 500;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-bottom: 1px solid #e0e0e0;
+    transition: none;
+    cursor: pointer;
+}
+
+.dropdown-main-link:hover {
+    background-color: #f5f5f5;
+    text-decoration: underline;
+}
+
+.submenu-arrow {
+    font-size: 10px;
+    margin-left: 10px;
+    transition: transform 0.2s;
+    color: var(--black);
+}
+
+.dropdown-submenu {
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-left: 2px solid #e0e0e0;
+}
+
+.dropdown-submenu a {
+    display: block;
+    font-size: 13px;
+    color: var(--black);
+    padding: 6px 15px;
+    text-decoration: none;
+    border-bottom: 1px dashed #f0f0f0;
+}
+
+.dropdown-submenu a:hover {
+    background-color: #f9f9f9;
+    text-decoration: underline;
+}
+
+/* Убираем старые стили наведения */
+.nav-menu li a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.arrow {
+    width: 12px;
+    margin-left: 5px;
+    transition: transform 0.2s;
+}
+
+/* Стили для скролла внутри меню */
+.click-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.click-dropdown::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.click-dropdown::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 0;
+}
+
+.click-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+/* Для мобильной версии */
+@media (max-width: 768px) {
+    .click-dropdown {
+        display: none !important;
+    }
+}
+
+/* Выпадающее меню при наведении */
+.hover-dropdown {
+    display: none;
+    position: absolute;
+    background: var(--white);
+    border: 2px solid var(--black);
+    padding: 15px;
+    border-radius: 0;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1001;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+    animation: fadeIn 0.2s ease;
+}
+
+.hover-dropdown a {
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 500;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-bottom: 1px solid #e0e0e0;
+    display: block;
+    transition: none;
+}
+
+.hover-dropdown a:last-child {
+    border-bottom: none;
+}
+
+.hover-dropdown a:hover {
+    background-color: transparent;
+    color: var(--black);
+    text-decoration: underline;
+    transform: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Убираем старые стили наведения */
+.nav-menu li a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.arrow {
+    width: 12px;
+    margin-left: 5px;
+    transition: transform 0.2s;
+}
+
+.nav-menu li:hover .arrow {
+    transform: rotate(180deg);
+}
+
+/* Для мобильной версии */
+@media (max-width: 768px) {
+    .hover-dropdown {
+        display: none !important;
+    }
 }
 
 /* Поиск */
