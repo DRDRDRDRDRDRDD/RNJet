@@ -256,7 +256,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Убираем старые стили наведения */
 .nav-menu li a:hover {
     color: var(--black);
     text-decoration: underline;
@@ -699,6 +698,12 @@ main {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 10px;
+}
+
+.printer-info a {
+
+    display: flex;
+    justify-content: center;
 }
 
 .feature-list {

@@ -250,7 +250,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Убираем старые стили наведения */
 .nav-menu li a:hover {
     color: var(--black);
     text-decoration: underline;
@@ -671,7 +670,7 @@ nav {
     background-color: #fafafa;
 }
 
-
+/*Список информации*/
 .container-li {
     max-width: 1200px;
     margin: 40px auto;
