@@ -13,7 +13,7 @@ main {
     position: relative;
     min-height: 450px;
     overflow-x: auto;
-
+    padding-bottom: 10px;
 }
 
 .hero-content {
@@ -49,15 +49,11 @@ main {
     background-color: var(--red);
     color: var(--white);
     padding: 12px;
-    /* width: 220px; */
-    /* font-size: 20px; */
-    /* font-weight: 600; */
     border-radius: 10px;
     text-decoration: none;
     transition: background-color 0.3s;
     justify-content: center;
     margin-top: 20px;
-
 }
 
 .hero-image {
@@ -71,8 +67,6 @@ main {
 
 .hero-info {
     width: 235px;
-    /* height: 30px; */
-    /* align-items: center; */
     text-align: center;
     border-radius: 20px;
     background-color: var(--white);
@@ -97,14 +91,6 @@ main {
     color: var(--red);
     margin-bottom: 20px;
 }
-
-/*
-.divider {
-    width: 100px;
-    height: 3px;
-    background-color: var(--red);
-    margin: 0 auto 40px;
-}*/
 
 .brands-grid {
     display: grid;
@@ -255,6 +241,7 @@ main {
     gap: 67px;
     margin-top: 20px;
     border-bottom: 1px solid var(--black);
+    padding-bottom: 30px;
 }
 
 .printer-info {
@@ -271,7 +258,6 @@ main {
 }
 
 .printer-info a {
-
     display: flex;
     justify-content: center;
 }
@@ -281,7 +267,6 @@ main {
     row-gap: 25px;
     margin-bottom: 20px;
 }
-
 
 /* ПОЧЕМУ СТОИТ ВЫБРАТЬ RN MARK? */
 .strengths-header h1 {
@@ -304,10 +289,11 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .elementor-section img {
-    display: grid;
     width: 180px;
     gap: 10px;
     margin: 20px;
@@ -342,7 +328,6 @@ main {
 }
 
 .card img {
-    width: 50px;
     width: 60px;
 }
 
@@ -415,6 +400,8 @@ main {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
 }
 
 .industry-item {
@@ -422,7 +409,7 @@ main {
     background-color: var(--white);
     border-radius: 10px;
     padding: 20px;
-    margin-right: 20px;
+    min-width: 200px;
     border-left: 4px solid var(--red);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -450,7 +437,6 @@ main {
     min-width: 80px;
     text-align: center;
 }
-
 
 .market-buttons {
     display: flex;
@@ -527,9 +513,21 @@ main {
     gap: 40px;
 }
 
+.green-grid a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .green-grid li {
     color: var(--black);
     font-size: var(--font-size-p);
+    list-style: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.green-grid li:hover {
+    color: var(--red);
 }
 
 /* ПОЧЕМУ ИМЕННО МЫ */
@@ -573,7 +571,6 @@ main {
 }
 
 .why-us-card {
-    /* flex: 0 0 280px; */
     background-color: var(--blue);
     border-radius: 20px;
     padding: 60px 50px 30px 40px;
@@ -758,198 +755,450 @@ main {
     box-shadow: 0 10px 20px rgba(215, 23, 42, 0.2);
 }
 
+/* Для планшетов и небольших ноутбуков */
+@media (max-width: 1200px) {
+    .printers-grid {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .printer-info {
+        width: 300px;
+    }
+    
+    .strengths-info {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    
+    .elementor-section {
+        justify-content: center;
+    }
+}
 
-/* Адаптивность */
+/* Для планшетов */
 @media (max-width: 992px) {
-    .customers-logos-grid {
+    .hero-cards-container {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .hero-content {
+        width: 100%;
+        flex: 0 1 auto;
+        height: auto;
+        min-height: 350px;
+    }
+    
+    .hero-image img {
+        width: 280px;
+        height: 230px;
+    }
+    
+    .brands-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .brand-features {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .contact-info-grid {
-        grid-template-columns: 1fr;
+    
+    .printers-grid {
+        gap: 40px;
     }
-}
-
-@media (max-width: 768px) {
-    .customers-logos-grid {
-        grid-template-columns: 1fr;
+    
+    .printer-info {
+        width: 45%;
+    }
+    
+    .elementor-section img {
+        width: 150px;
+        margin: 10px;
+    }
+    
+    .market-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .green-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-
-    .form-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .contact-form-section,
-    .contact-info-section {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .customer-logo-item img {
-        max-height: 60px;
-    }
-
-    .contact-form-section h2 {
-        font-size: 28px;
-    }
-}
-
-/* Адаптивность */
-@media (max-width: 992px) {
+    
     .made-in-canada-content {
         flex-direction: column;
         text-align: center;
         gap: 30px;
     }
-
+    
     .made-in-canada-text h1 {
         font-size: 36px;
     }
-
+    
     .made-in-canada-text h2 {
         font-size: 20px;
     }
 }
 
+/* Для мобильных устройств */
 @media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .hero-text {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 22px;
+    }
+    
+    .hero-infolist {
+        text-align: left;
+    }
+    
+    .hero-image {
+        direction: ltr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-info {
+        margin-right: 0;
+        margin-top: 10px;
+        width: 200px;
+    }
+    
+    .hero-image img {
+        width: 250px;
+        height: 200px;
+    }
+    
+    .brand-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .feature-icon {
+        margin: 0 auto 10px;
+    }
+    
+    .printers-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .printer-info {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .strengths-info {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        min-height: 329px;
+    }
+    
+    .elementor-section {
+        flex-direction: column;
+    }
+    
+    .elementor-section img {
+        width: 180px;
+        margin: 10px 0;
+    }
+    
+    .market-header {
+        padding: 0;
+    }
+    
+    .market-header h1 {
+        font-size: 28px;
+    }
+    
+    .materials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .industry-item {
+        min-width: 180px;
+    }
+    
+    .green-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .green-info {
+        margin-left: 0;
+    }
+    
     .why-us-card {
-        flex: 0 0 250px;
-        padding: 25px;
+        width: 300px;
+        height: 260px;
+        padding: 50px 30px 20px 30px;
     }
-
+    
     .why-us-number {
-        font-size: 40px;
+        width: 60px;
+        height: 60px;
+        bottom: 210px;
+        margin-left: -40px;
     }
-
+    
+    .why-us-number img {
+        width: 30px;
+    }
+    
     .why-us-title {
-        font-size: 20px;
+        font-size: 18px;
     }
-
-    .why-us-description {
-        font-size: 14px;
+    
+    .contact-form-section {
+        padding: 30px 20px;
     }
-
+    
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-submit-btn {
+        max-width: 100%;
+    }
+    
     .made-in-canada-text h1 {
         font-size: 32px;
         letter-spacing: 2px;
     }
-}
-
-@media (max-width: 576px) {
-    .why-us-section {
-        padding: 60px 0;
-    }
-
-    .why-us-header h1 {
-        font-size: 32px;
-    }
-
-    .why-us-card {
-        flex: 0 0 220px;
-        padding: 20px;
-    }
-
-    .made-in-canada-text h1 {
-        font-size: 28px;
-        letter-spacing: 1px;
-    }
-
+    
     .made-in-canada-image img {
         max-width: 250px;
     }
 }
 
-/* Адаптивность */
-@media (max-width: 992px) {
-    .market-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .market-header {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .market-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .market-btn {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .materials-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .industry-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-}
-
+/* Для маленьких мобильных устройств */
 @media (max-width: 576px) {
-    .market-header h1 {
-        font-size: 32px;
+    .hero-content {
+        padding: 15px;
     }
-
-    .market-header p {
+    
+    .hero-text h1 {
+        font-size: 20px;
+    }
+    
+    .hero-text p {
         font-size: 16px;
     }
-
-    .print-anything h2 {
-        font-size: 28px;
+    
+    .hero-image img {
+        width: 220px;
+        height: 180px;
     }
-}
-
-/* Адаптивность */
-@media (max-width: 992px) {
-    .brands-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    
+    .hero-info {
+        width: 180px;
     }
-
-    .comments-grid {
-        grid-template-columns: repeat(2, 1fr);
+    
+    .hero-info p {
+        font-size: 14px;
     }
-
-    .brand-features {
-        grid-template-columns: 1fr;
+    
+    .authority-section {
+        padding: 40px 0;
+        border-radius: 20px;
     }
-}
-
-@media (max-width: 768px) {
-    .comments-grid {
-        grid-template-columns: 1fr;
+    
+    .authority-header h1 {
+        font-size: 24px;
     }
-
+    
+    .brand-item-main {
+        padding: 20px;
+    }
+    
+    .brand-item-main img {
+        width: 120px;
+    }
+    
     .button-info {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
-
+    
     .button-red,
     .button-white {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
+        padding: 12px 20px;
+    }
+    
+    .printers-section h1 {
+        font-size: 24px;
+    }
+    
+    .strengths-header h1 {
+        font-size: 24px;
+    }
+    
+    .market-section {
+        padding: 40px 0;
+        border-radius: 20px;
+    }
+    
+    .market-header h1 {
+        font-size: 24px;
+    }
+    
+    .market-btn-red {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+    
+    .green {
+        padding: 40px 0;
+        border-radius: 20px;
+    }
+    
+    .green h1 {
+        font-size: 24px;
+    }
+    
+    .why-us-section {
+        padding: 40px 0;
+        border-radius: 20px;
+    }
+    
+    .why-us-header h1 {
+        font-size: 24px;
+    }
+    
+    .why-us-card {
+        width: 260px;
+        height: 240px;
+        padding: 45px 20px 15px 20px;
+    }
+    
+    .why-us-number {
+        width: 50px;
+        height: 50px;
+        bottom: 195px;
+        margin-left: -30px;
+    }
+    
+    .why-us-number img {
+        width: 25px;
+    }
+    
+    .why-us-title {
+        font-size: 16px;
+    }
+    
+    .why-us-description {
+        font-size: 14px;
+    }
+    
+    .made-in-canada-section {
+        padding: 40px 0;
+        border-radius: 20px;
+    }
+    
+    .made-in-canada-text h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    
+    .made-in-canada-text h2 {
+        font-size: 18px;
+    }
+    
+    .made-in-canada-image img {
+        max-width: 200px;
+    }
+    
+    .contact-form-section h2 {
+        font-size: 24px;
+    }
+    
+    .form-input,
+    .form-textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .form-submit-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+    
+    .contact-info-section {
+        padding: 30px 15px;
+    }
+    
+    .contact-info-column h3 {
+        font-size: 18px;
+    }
+    
+    .contact-info-column p {
+        font-size: 14px;
+    }
+    
+    .copyright {
+        font-size: 12px;
     }
 }
 
-@media (max-width: 576px) {
-    .feature-item {
-        flex-direction: column;
-        text-align: center;
+/* Для очень маленьких устройств */
+@media (max-width: 375px) {
+    .hero-image img {
+        width: 180px;
+        height: 150px;
     }
-
-    .feature-icon {
-        margin: 0 auto 10px;
+    
+    .hero-info {
+        width: 160px;
+    }
+    
+    .hero-info p {
+        font-size: 12px;
+    }
+    
+    .printer-info {
+        max-width: 100%;
+    }
+    
+    .card {
+        max-width: 280px;
+        padding: 30px 10px 0 10px;
+    }
+    
+    .why-us-card {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .why-us-number {
+        bottom: 175px;
     }
 }

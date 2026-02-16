@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNJet 100+ | Промышленный струйный принтер</title>
+    <link rel="shortcut icon" href="../assets/images/Логотип.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/RNJet100+.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="top-bar">
+                <div class="logo">
+                    <a href="../index.html"><img src="../assets/images/Логотип.svg" alt="RN Mark"></a>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="menu-list"><a href="#">Продукты<img class="arrow"
+                                    src="../assets/images/СтрелочкаН.svg"></a></li>
+                        <li class="menu-list"><a href="#">Поддержка<img class="arrow"
+                                    src="../assets/images/СтрелочкаН.svg"></a></li>
+                        <li class="menu-list"><a href="#">Компания<img class="arrow"
+                                    src="../assets/images/СтрелочкаН.svg"></a></li>
+                        <li class="menu-list"><a href="#">Онлайн покупки</a></li>
+                    </ul>
+                </nav>
+                <div class="searchContainer">
+                    <input type="text" placeholder="Поиск..." class="searchInput">
+                    <button class="searchButton"><img src="../assets/images/Лупа.svg" width="30" height="30"></button>
+                </div>
+                <img src="../assets/images/Меню.svg" id="menu">
+                <div class="burger-menu" id="burger-menu" style="display: none;">
+                    <a href="../pages/application.html">Применения и рынки</a>
+                    <a href="#">Решения</a>
+                    <a href="../pages/products.html">Продукты</a>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Компания</a>
+                    <a href="#">Онлайн покупки</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Секция с принтером -->
+            <section class="product-hero">
+                <div class="product-image">
+                    <img src="../assets/images/Принтер.svg" alt="RNJet 100+ принтер">
+                </div>
+                <div class="product-title">
+                    <h1>RNJet 100+ <span>Промышленный струйный принтер высокого разрешения</span></h1>
+                    <p>RNJet 100+ — это усовершенствованная модель для нанесения мелкого шрифта, обеспечивающая
+                        исключительные возможности кодирования и маркировки продукции. Полная автономность, сенсорное
+                        управление и печать на любых поверхностях.</p>
+                    <div class="badge-container">
+                        <span class="badge">Никакой грязи</span>
+                        <span class="badge">Низкое обслуживание</span>
+                        <span class="badge">Быстро сохнет</span>
+                        <span class="badge">Доступно по цене</span>
+                        <span class="badge">Сделано в Канаде</span>
+                    </div>
+                    <div class="product-cta">
+                        <a href="#" class="rn-button"
+                            style="background: var(--red); color: white; padding: 15px 30px; border-radius: 10px;">Скачать
+                            брошюру</a>
+                        <a href="#" class="rn-button"
+                            style="background: transparent; color: var(--red); border: 2px solid var(--red); padding: 15px 30px; border-radius: 10px;">Запросить
+                            цену</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Вкладки: Технические характеристики / Функции / Документы / Видео -->
+            <section style="margin: 40px 0;">
+                <div class="tab-buttons">
+                    <button class="tab-btn active">Технические характеристики</button>
+                    <button class="tab-btn">Функции</button>
+                    <button class="tab-btn">Документы</button>
+                    <button class="tab-btn">Видео</button>
+                </div>
+            </section>
+
+            <!-- Детальная информация -->
+            <section class="info-grid">
+                <!-- Карточка: Технология и основные параметры -->
+                <div class="info-card">
+                    <h2>Технические характеристики</h2>
+                    <table class="specs-table">
+                        <tr>
+                            <td>Технология</td>
+                            <td>Пьезоэлектрическая печатающая головка (DoD)</td>
+                        </tr>
+                        <tr>
+                            <td>Макс. скорость печати</td>
+                            <td>60 м/мин (100 dpi) / 40 м/мин (180 dpi)</td>
+                        </tr>
+                        <tr>
+                            <td>Макс. высота печати</td>
+                            <td>18 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Макс. длина печати</td>
+                            <td>9200 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Дальность броска</td>
+                            <td>до 15 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Разрешение</td>
+                            <td>180 dpi</td>
+                        </tr>
+                        <tr>
+                            <td>Типы чернил</td>
+                            <td>Сольвентные, масляные, пищевые</td>
+                        </tr>
+                        <tr>
+                            <td>Ориентация печати</td>
+                            <td>Любая (сбоку, снизу, сверху, под углом)</td>
+                        </tr>
+                        <tr>
+                            <td>Порты ввода/вывода</td>
+                            <td>Ethernet, RS-232, USB, фотоэлемент, энкодер</td>
+                        </tr>
+                        <tr>
+                            <td>Дисплей</td>
+                            <td>7" сенсорный контроллер</td>
+                        </tr>
+                        <tr>
+                            <td>Питание</td>
+                            <td>12В, 5.0А</td>
+                        </tr>
+                        <tr>
+                            <td>Количество печатающих головок</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Управление чернилами</td>
+                            <td>Отсутствует индикатор уровня чернил и система оповещения о низком уровне чернил.</td>
+                        </tr>
+                        <tr>
+                            <td>Рабочая температура</td>
+                            <td>0°C … +45°C</td>
+                        </tr>
+                        <tr>
+                            <td>Температура хранения</td>
+                            <td>от -5°C до 50°C</td>
+                        </tr>
+                        <tr>
+                            <td>Сертификаты</td>
+                            <td>CE, TUV, FCC, UL, CSA</td>
+                        </tr>
+                        <tr>
+                            <td>Подключение</td>
+                            <td>USB, RS-232, Ethernet</td>
+                        </tr>
+                        <tr>
+                            <td>Система</td>
+                            <td>На основе картриджа</td>
+                        </tr>
+                        <tr>
+                            <td>Сертификаты источников питания</td>
+                            <td>CE, TUV, FCC, UL, CSA</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Карточка: Функции и возможности печати -->
+                <div class="info-card">
+                    <h2>Функции печати</h2>
+                    <ul class="feature-list-compact">
+                        <li>Печать текста, логотипов, штрих-кодов (все популярные форматы)</li>
+                        <li>GS1 Data Matrix, QR-коды, уникальные серийные номера</li>
+                        <li>Счетчики, даты, время, данные из динамической базы данных (.CSV)</li>
+                        <li>Двухцветная маркировка (опционально)</li>
+                        <li>Библиотека сообщений: более 1000 файлов</li>
+                        <li>Автономная работа — ПК не требуется</li>
+                        <li>Создание макетов прямо на сенсорном экране</li>
+                        <li>Единичный и непрерывный pежимы печати</li>
+                        <li>Программное обеспечение RN Soft + </li>
+                        <li>Английский (по умолчанию), французский, испанский, итальянский, португальский, русский,
+                            персидский и многие другие языки</li>
+                    </ul>
+                    <div style="margin-top: 25px;">
+                        <h3 style="color: var(--blue);">Поддерживаемые форматы баз данных</h3>
+                        <p>.CSV, подключение к внешним устройствам (весы, сканеры)</p>
+                    </div>
+                </div>
+
+                <!-- Карточка: Цвета чернил -->
+                <div class="info-card">
+                    <h2>Цвета чернил</h2>
+                    <div class="ink-colors">
+                        <span class="color-dot" style="background: #000;"></span> Черный
+                        <span class="color-dot" style="background: #fff; border:1px solid #000;"></span> Белый
+                        пигментированный
+                        <span class="color-dot" style="background: #ff0000;"></span> Красный
+                        <span class="color-dot" style="background: #0000ff;"></span> Синий
+                        <span class="color-dot" style="background: #ffff00;"></span> Желтый
+                    </div>
+                    <p style="margin-top: 15px;">Также доступны фиолетовый, зелёный и другие цвета под заказ. Чернила на
+                        масляной, сольвентной и водной основе для любых поверхностей.</p>
+                </div>
+
+                <!-- Карточка: Применение  -->
+                <div class="info-card">
+                    <h2>Применение</h2>
+                    <p>Идеально подходит для маркировки:</p>
+                    <div class="applications-list">
+                        <span class="app-item">Картонные коробки</span>
+                        <span class="app-item">Упаковка пищевых продуктов</span>
+                        <span class="app-item">Чистящие средства</span>
+                        <span class="app-item">Автомобильные запчасти</span>
+                        <span class="app-item">Фармацевтика</span>
+                        <span class="app-item">Мешки с цементом/мукой</span>
+                        <span class="app-item">Пластик и металл</span>
+                        <span class="app-item">Стекло</span>
+                        <span class="app-item">Дерево</span>
+                        <span class="app-item">Кабель и трубы</span>
+                    </div>
+                    <div style="margin-top: 20px; background: #f0f0f0; padding: 15px; border-radius: 15px;">
+                        <strong>Примеры дат:</strong> PRO 02/12/2025 EXP 05/10/2027 → идеально для продуктов питания и
+                        напитков.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Почему вам стоит обратить внимание на этот принтер -->
+            <section class="benefits-highlight">
+                <h2>8 причин выбрать RNJet 100+</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h3>1. Доступность</h3>
+                        <p>Оптимальное соотношение цены и качества.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>2. Простота эксплуатации</h3>
+                        <p>Интуитивный интерфейс, быстрый старт.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>3. Высокая скорость</h3>
+                        <p>До 60 м/мин, до 10 читаемых строк.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>4. Надежность</h3>
+                        <p>Низкие требования к обслуживанию, печатающая головка всегда чистая.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>5. Устойчивость</h3>
+                        <p>Выдерживает вибрации и перепады температур.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>6. Автономная работа</h3>
+                        <p>ПК не требуется, всё на сенсорном экране.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>7. Гибкость печати</h3>
+                        <p>Текст, даты, логотипы, штрих-коды, динамические базы данных.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>8. Разнообразие чернил</h3>
+                        <p>Черный, белый, жёлтый, синий, красный, фиолетовый и др.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8 преимуществ -->
+            <section class="advantages">
+                <h2>Ключевые преимущества RNJet 100+
+                </h2>
+                <div class="printers-grid">
+                    <div class="printers-grid-card">Быстрая установка – легко интегрируется в линию</div>
+                    <div class="printers-grid-card">Превосходное качество печати – легко читается и сканируется</div>
+                    <div class="printers-grid-card">Печатайте что угодно: графика, логотипы, сложные коды</div>
+                    <div class="printers-grid-card">На чём угодно: пористые и непористые поверхности</div>
+                    <div class="printers-grid-card">Автономность – ПК не требуется</div>
+                    <div class="printers-grid-card">Отсутствие простоев – быстрая смена кода</div>
+                    <div class="printers-grid-card">Включил и печатай – без проблем</div>
+                    <div class="printers-grid-card">Низкая стоимость обслуживания</div>
+                </div>
+            </section>
+
+            <!-- Ресурсы для скачивания -->
+            <section style="margin: 60px 0;">
+                <h2 style="color: var(--red);">Ресурсы</h2>
+                <div class="resources">
+                    <div class="resource-item">
+                        <img src="../assets/images/Стоимость.svg" alt="PDF">
+                        <h4>Техническая спецификация</h4>
+                        <a href="#" style="color: var(--red);">Скачать PDF</a>
+                    </div>
+                    <div class="resource-item">
+                        <img src="../assets/images/Медаль.svg" alt="BROCHURE">
+                        <h4>Брошюра RNJet 100+</h4>
+                        <a href="#" style="color: var(--red);">Скачать</a>
+                    </div>
+                    <div class="resource-item">
+                        <img src="../assets/images/Гайка.svg" alt="VIDEO">
+                        <h4>Видеообзор</h4>
+                        <a href="#" style="color: var(--red);">Смотреть на YouTube</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Блок с контактами -->
+            <section class="contact-info-section" style="margin-top: 80px;">
+                <div class="contact-info-grid">
+                    <div class="contact-info-column">
+                        <a href="../index.html"><img src="../assets/images/Логотип.svg" class="logotype"></a>
+                        <p>RN Mark Inc. — производитель промышленных струйных принтеров в Канаде. Более 20 лет
+                            разрабатываем доступные и высокопроизводительные кодировщики.</p>
+                    </div>
+                    <div class="contact-info-column">
+                        <h3>Контакты</h3>
+                        <p>ООО ИнСофтРитейл (ИНН 7325105104)</p>
+                        <p>Адрес: РФ, г Ульяновск, ул. Рылеева, д.11, офис 4</p>
+                    </div>
+                    <div class="contact-info-column">
+                        <h3>Контактная информация</h3>
+                        <p>Телефон: +7 8422 58 63 70</p>
+                        <p>E-mail: office@insoftretail.ru</p>
+                        <div class="copyright-img">
+                            <a href="#"><img src="../assets/images/facebook.svg"></a>
+                            <a href="#"><img src="../assets/images/youtube.svg"></a>
+                            <a href="#"><img src="../assets/images/in.svg"></a>
+                            <a href="#"><img src="../assets/images/instagram.svg"></a>
+                            <a href="#"><img src="../assets/images/twitter.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Авторские права © 2022–2025 Все права защищены.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="../scripts/index.js"></script>
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

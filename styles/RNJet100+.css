@@ -1,0 +1,295 @@
+/* Дополнительные стили для страницы продукта */
+.product-hero {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 40px 0;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--white) 0%, #f5f5f5 100%);
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.product-image {
+    flex: 1;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+.product-title {
+    flex: 1;
+}
+
+.product-title h1 {
+    font-size: 48px;
+    color: var(--red);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.product-title h1 span {
+    font-size: 24px;
+    color: var(--black);
+    display: block;
+    font-weight: 400;
+}
+
+.product-title p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.product-cta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Детальная информация */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 60px 0;
+}
+
+.info-card {
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    box-shadow: 0 15px 30px rgba(215, 23, 42, 0.1);
+}
+
+.info-card h2 {
+    color: var(--red);
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--red);
+    padding-left: 15px;
+}
+
+.feature-list-compact {
+    list-style: none;
+}
+
+.feature-list-compact li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 16px;
+}
+
+.feature-list-compact li::before {
+    content: "✔";
+    color: var(--red);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table tr {
+    border-bottom: 1px dashed #ddd;
+}
+
+.specs-table tr:last-child {
+    border-bottom: none;
+}
+
+.specs-table td {
+    padding: 12px 5px;
+    font-size: 16px;
+}
+
+.specs-table td:first-child {
+    font-weight: 600;
+    color: var(--blue);
+    width: 40%;
+}
+
+.badge-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.badge {
+    background-color: var(--blue);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.applications-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.app-item {
+    background: var(--grey);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+/* Почему вам стоит обратить внимание на этот принтер */
+.benefits-highlight {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 40px;
+    padding: 60px;
+    margin: 60px 0;
+}
+
+.benefits-highlight h2 {
+    color: var(--yellow);
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.benefit-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 20px;
+    border-left: 4px solid var(--red);
+}
+
+.benefit-item h3 {
+    color: var(--yellow);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.benefit-item p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* 8 преимуществ */
+.advantages {
+    margin: 60px 0;
+}
+
+.advantages h2 {
+    color: var(--red);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.printers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 20px;
+}
+
+.printers-grid-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.ink-colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.color-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 25px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background: var(--red);
+    color: white;
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.resource-item {
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    border: 2px solid #eee;
+    transition: 0.3s;
+}
+
+.resource-item:hover {
+    border-color: var(--red);
+}
+
+.resource-item img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+    .product-hero {
+        flex-direction: column;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-highlight {
+        padding: 30px;
+    }
+}
