@@ -471,6 +471,52 @@ nav {
 }
 
 
+/*Список информации*/
+.container-li {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 23px);
+    min-width: 200px;
+}
+
+.sections h2 {
+    font-size: 18px;
+    color: var(--black);
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 8px;
+}
+
+.sections ul {
+    list-style: none;
+}
+
+.sections li {
+    margin-bottom: 8px;
+}
+
+.sections li a {
+    color: var(--black);
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.sections li a:hover {
+    border-bottom: 1px solid var(--black);
+}
+
 /* Для мобильной версии */
 @media (max-width: 768px) {
     .hover-dropdown {

@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RNJet 100+ | Промышленный струйный принтер</title>
+    <title>RNJet 200 | Двухголовочный промышленный принтер</title>
     <link rel="shortcut icon" href="../assets/images/Логотип.svg" type="image/x-icon">
     <link rel="stylesheet" href="../styles/globals.css">
     <link rel="stylesheet" href="../styles/printers.css">
+
 </head>
 
 <body>
@@ -50,13 +51,13 @@
             <!-- Секция с принтером -->
             <section class="product-hero">
                 <div class="product-image">
-                    <img src="../assets/images/RNJet100+.png">
+                    <img src="../assets/images/RNJet200.png" style="transform: scale(1.05);">
                 </div>
                 <div class="product-title">
-                    <h1>RNJet 100+ <span>Промышленный струйный принтер высокого разрешения</span></h1>
-                    <p>RNJet 100+ — это усовершенствованная модель для нанесения мелкого шрифта, обеспечивающая
-                        исключительные возможности кодирования и маркировки продукции. Полная автономность, сенсорное
-                        управление и печать на любых поверхностях.</p>
+                    <h1>RNJet 200 <span>Двухголовочный промышленный струйный принтер высокого разрешения</span></h1>
+                    <p>RNJet 200 — двухголовочный принтер для нанесения мелкого шрифта и сложной маркировки. Позволяет
+                        печатать на любых поверхностях с разных сторон одной линии. Полная автономность, удобный
+                        сенсорный экран и исключительная гибкость настройки.</p>
                     <div class="badge-container">
                         <span class="badge">Никакой грязи</span>
                         <span class="badge">Низкое обслуживание</span>
@@ -75,15 +76,41 @@
                 </div>
             </section>
 
-            <!-- Детальная информация -->
+            <!-- Двухцветная маркировка -->
+            <section class="two-color-showcase">
+                <div style="flex: 1;">
+                    <h3>Двухцветная маркировка</h3>
+                    <p style="font-size: 18px;">RNJet 200 поддерживает двухцветную печать одновременно двумя головками.
+                        Идеально для выделения сроков годности, логотипов и предупреждений.</p>
+                    <ul class="feature-list-compact">
+                        <li>Контрастная маркировка разными цветами</li>
+                        <li>Черный + красный, синий, зеленый и др.</li>
+                        <li>Единое сообщение двумя цветами</li>
+                    </ul>
+                </div>
+                <div
+                    style="flex: 1; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <span
+                        style="background: #000; color: white; padding: 5px 15px; border-radius: 30px; font-weight: bold;">RNJet
+                        200</span>
+                    <span
+                        style="background: var(--red); color: white; padding: 5px 15px; border-radius: 30px; margin-left: 10px; font-weight: bold;">DUO
+                        COLOR</span>
+                    <p style="margin-top: 20px;"><span style="color: var(--red);">●</span> Срок годности:
+                        <strong>05/2027</strong> <span style="color: var(--blue); margin-left: 20px;">●</span> Партия:
+                        <strong>AB789C</strong></p>
+                </div>
+            </section>
+
+            <!-- Детальная информация в сетке -->
             <section class="info-grid">
-                <!-- Карточка: Технология и основные параметры -->
+                <!-- Технология и основные характеристики -->
                 <div class="info-card">
                     <h2>Технические характеристики</h2>
                     <table class="specs-table">
                         <tr>
                             <td>Технология</td>
-                            <td>Пьезоэлектрическая печатающая головка (DoD)</td>
+                            <td>Пьезоэлектрическая печатающая головка (DoD) с гравитационной подачей</td>
                         </tr>
                         <tr>
                             <td>Макс. скорость печати</td>
@@ -91,7 +118,7 @@
                         </tr>
                         <tr>
                             <td>Макс. высота печати</td>
-                            <td>18 мм</td>
+                            <td>36 мм (суммарно до 18 мм каждой головкой)</td>
                         </tr>
                         <tr>
                             <td>Макс. длина печати</td>
@@ -103,11 +130,15 @@
                         </tr>
                         <tr>
                             <td>Разрешение</td>
-                            <td>180 dpi</td>
+                            <td>до 180 dpi</td>
                         </tr>
                         <tr>
                             <td>Типы чернил</td>
                             <td>Сольвентные, масляные, пищевые</td>
+                        </tr>
+                        <tr>
+                            <td>Цвета чернил</td>
+                            <td>Черный, белый пигментированный, красный, синий, желтый, фиолетовый, зеленый</td>
                         </tr>
                         <tr>
                             <td>Ориентация печати</td>
@@ -115,7 +146,7 @@
                         </tr>
                         <tr>
                             <td>Порты ввода/вывода</td>
-                            <td>Ethernet, RS-232, USB, фотоэлемент, энкодер</td>
+                            <td>Ethernet, RS-232, USB, фотоэлемент (NPN), энкодер</td>
                         </tr>
                         <tr>
                             <td>Дисплей</td>
@@ -127,23 +158,19 @@
                         </tr>
                         <tr>
                             <td>Количество печатающих головок</td>
-                            <td>1</td>
+                            <td><strong>2</strong> (независимое управление)</td>
                         </tr>
                         <tr>
                             <td>Управление чернилами</td>
-                            <td>Отсутствует индикатор уровня чернил и система оповещения о низком уровне чернил.</td>
+                            <td>Система гравитационной подачи, индикация уровня отсутствует</td>
                         </tr>
                         <tr>
                             <td>Рабочая температура</td>
-                            <td>0°C … +45°C</td>
+                            <td>0°C … +45°C, влажность 20–80%</td>
                         </tr>
                         <tr>
                             <td>Температура хранения</td>
-                            <td>от -5°C до 50°C</td>
-                        </tr>
-                        <tr>
-                            <td>Сертификаты</td>
-                            <td>CE, TUV, FCC, UL, CSA</td>
+                            <td>-5°C … +50°C</td>
                         </tr>
                         <tr>
                             <td>Подключение</td>
@@ -154,50 +181,35 @@
                             <td>На основе картриджа</td>
                         </tr>
                         <tr>
-                            <td>Сертификаты источников питания</td>
+                            <td>Сертификаты</td>
                             <td>CE, TUV, FCC, UL, CSA</td>
                         </tr>
                     </table>
                 </div>
 
-                <!-- Карточка: Функции и возможности печати -->
+                <!-- Функции печати и програмное обеспечение -->
                 <div class="info-card">
                     <h2>Функции печати</h2>
                     <ul class="feature-list-compact">
-                        <li>Печать текста, логотипов, штрих-кодов (все популярные форматы)</li>
-                        <li>GS1 Data Matrix, QR-коды, уникальные серийные номера</li>
-                        <li>Счетчики, даты, время, данные из динамической базы данных (.CSV)</li>
-                        <li>Двухцветная маркировка (опционально)</li>
+                        <li>Текст, логотипы, штрих-коды (все популярные форматы)</li>
+                        <li>GS1 Data Matrix, QR-коды, серийные номера</li>
+                        <li>Счетчики, даты, время, смены, внешние базы данных (.CSV)</li>
+                        <li>Двухцветная печать (опционально)</li>
                         <li>Библиотека сообщений: более 1000 файлов</li>
                         <li>Автономная работа — ПК не требуется</li>
                         <li>Создание макетов прямо на сенсорном экране</li>
-                        <li>Единичный и непрерывный pежимы печати</li>
-                        <li>Программное обеспечение RN Soft + </li>
-                        <li>Английский (по умолчанию), французский, испанский, итальянский, португальский, русский,
-                            персидский и многие другие языки</li>
+                        <li>Режимы: единичный и непрерывный</li>
+                        <li>Программное обеспечение RN Soft+ (включено)</li>
+                        <li>Поддержка языков: английский, испанский, итальянский, португальский, персидский, русский,
+                            китайский и др.</li>
                     </ul>
-                    <div style="margin-top: 25px;">
-                        <h3 style="color: var(--blue);">Поддерживаемые форматы баз данных</h3>
-                        <p>.CSV, подключение к внешним устройствам (весы, сканеры)</p>
+                    <div style="margin-top: 20px;">
+                        <h3 style="color: var(--blue);">Поддерживаемые базы данных</h3>
+                        <p>.CSV, подключение к весам, сканерам, внешним устройствам</p>
                     </div>
                 </div>
 
-                <!-- Карточка: Цвета чернил -->
-                <div class="info-card">
-                    <h2>Цвета чернил</h2>
-                    <div class="ink-colors">
-                        <span class="color-dot" style="background: #000;"></span> Черный
-                        <span class="color-dot" style="background: #fff; border:1px solid #000;"></span> Белый
-                        пигментированный
-                        <span class="color-dot" style="background: #ff0000;"></span> Красный
-                        <span class="color-dot" style="background: #0000ff;"></span> Синий
-                        <span class="color-dot" style="background: #ffff00;"></span> Желтый
-                    </div>
-                    <p style="margin-top: 15px;">Также доступны фиолетовый, зелёный и другие цвета под заказ. Чернила на
-                        масляной, сольвентной и водной основе для любых поверхностей.</p>
-                </div>
-
-                <!-- Карточка: Применение  -->
+                <!-- Применение -->
                 <div class="info-card">
                     <h2>Применение</h2>
                     <p>Идеально подходит для маркировки:</p>
@@ -212,66 +224,110 @@
                         <span class="app-item">Стекло</span>
                         <span class="app-item">Дерево</span>
                         <span class="app-item">Кабель и трубы</span>
+                        <span class="app-item">Яйца</span>
                     </div>
                     <div style="margin-top: 20px; background: #f0f0f0; padding: 15px; border-radius: 15px;">
-                        <strong>Примеры дат:</strong> PRO 02/12/2025 EXP 05/10/2027 → идеально для продуктов питания и
-                        напитков.
+                        <strong>GTIN:</strong> 8141904045 | <strong>UID:</strong> 873767438899<br>
+                        <strong>EXP:</strong> 2026-12-31 | <strong>Lot:</strong> 89754B
                     </div>
+                </div>
+
+                <!-- Цвета чернил + Особенности двух головок -->
+                <div class="info-card">
+                    <h2>Две печатающие головки</h2>
+                    <p>Печать с разных сторон одной линии, разной или одинаковой информацией. Ширина до 18 мм каждой
+                        головкой, суммарно до 36 мм.</p>
+                    <div class="ink-colors" style="margin-top: 20px;">
+                        <span class="color-dot" style="background: #000;"></span> Черный
+                        <span class="color-dot" style="background: #fff; border:1px solid #000;"></span> Белый
+                        <span class="color-dot" style="background: #ff0000;"></span> Красный
+                        <span class="color-dot" style="background: #0000ff;"></span> Синий
+                        <span class="color-dot" style="background: #ffff00;"></span> Желтый
+                        <span class="color-dot" style="background: #800080;"></span> Фиолетовый
+                        <span class="color-dot" style="background: #00ff00;"></span> Зеленый
+                    </div>
+                    <p style="margin-top: 15px;">Чернила на масляной, сольвентной, водной основе для пористых и
+                        непористых поверхностей. Время высыхания от 10 секунд.</p>
                 </div>
             </section>
 
-            <!-- Почему вам стоит обратить внимание на этот принтер -->
-            <section class="benefits-highlight">
-                <h2>8 причин выбрать RNJet 100+</h2>
-                <div class="benefits-grid">
+            <!-- Список причин -->
+            <section class="benefits-highlight" style="background-color: var(--blue);">
+                <h2>Почему вам стоит обратить внимание на этот принтер</h2>
+                <div class="benefits-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
                     <div class="benefit-item">
                         <h3>1. Доступность</h3>
-                        <p>Оптимальное соотношение цены и качества.</p>
+                        <p>Оптимальная цена за двухголовочную систему.</p>
                     </div>
                     <div class="benefit-item">
-                        <h3>2. Простота эксплуатации</h3>
-                        <p>Интуитивный интерфейс, быстрый старт.</p>
+                        <h3>2. Простота использования</h3>
+                        <p>Удобное ПО, быстрый старт.</p>
                     </div>
                     <div class="benefit-item">
                         <h3>3. Высокая скорость</h3>
-                        <p>До 60 м/мин, до 10 читаемых строк.</p>
+                        <p>До 60 м/мин.</p>
                     </div>
                     <div class="benefit-item">
                         <h3>4. Надежность</h3>
-                        <p>Низкие требования к обслуживанию, печатающая головка всегда чистая.</p>
+                        <p>Низкие требования к обслуживанию.</p>
                     </div>
                     <div class="benefit-item">
                         <h3>5. Устойчивость</h3>
-                        <p>Выдерживает вибрации и перепады температур.</p>
+                        <p>К вибрациям и перепадам температур.</p>
                     </div>
                     <div class="benefit-item">
                         <h3>6. Автономная работа</h3>
-                        <p>ПК не требуется, всё на сенсорном экране.</p>
+                        <p>ПК не требуется.</p>
                     </div>
                     <div class="benefit-item">
-                        <h3>7. Гибкость печати</h3>
-                        <p>Текст, даты, логотипы, штрих-коды, динамические базы данных.</p>
+                        <h3>7. Две головки</h3>
+                        <p>Печать с двух сторон одновременно.</p>
                     </div>
                     <div class="benefit-item">
-                        <h3>8. Разнообразие чернил</h3>
-                        <p>Черный, белый, жёлтый, синий, красный, фиолетовый и др.</p>
+                        <h3>8. Высота до 36 мм</h3>
+                        <p>Суммарная высота печати.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>9. Разная информация</h3>
+                        <p>Каждая сторона может иметь свой текст/код.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>10. Время сушки</h3>
+                        <p>От 10 секунд и более в зависимости от чернил.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>11. Всё в одном сообщении</h3>
+                        <p>Текст, дата, счетчик, смена, штрихкод.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>12. ПО без ограничений</h3>
+                        <p>RN Soft+ включено, безлимитное создание макетов.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- 8 преимуществ -->
+            <!-- 9 преимуществ по пунктам -->
             <section class="advantages">
-                <h2>Ключевые преимущества RNJet 100+
-                </h2>
-                <div class="printers-grid">
-                    <div class="printers-grid-card">Быстрая установка – легко интегрируется в линию</div>
-                    <div class="printers-grid-card">Превосходное качество печати – легко читается и сканируется</div>
-                    <div class="printers-grid-card">Печатайте что угодно: графика, логотипы, сложные коды</div>
-                    <div class="printers-grid-card">На чём угодно: пористые и непористые поверхности</div>
+                <h2>9 преимуществ принтера RNJet 200</h2>
+                <div class="printers-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="printers-grid-card">Быстрая настройка – легко интегрируется в линию</div>
+                    <div class="printers-grid-card">Превосходное качество – легко читается и сканируется</div>
+                    <div class="printers-grid-card">Печать чего угодно: графика, логотипы, сложные коды</div>
+                    <div class="printers-grid-card">Печать на чём угодно: пористые и непористые поверхности</div>
                     <div class="printers-grid-card">Автономность – ПК не требуется</div>
+                    <div class="printers-grid-card">Две печатающие головки</div>
                     <div class="printers-grid-card">Отсутствие простоев – быстрая смена кода</div>
                     <div class="printers-grid-card">Включил и печатай – без проблем</div>
-                    <div class="printers-grid-card">Низкая стоимость обслуживания</div>
+                    <div class="printers-grid-card">Очень низкая стоимость обслуживания</div>
+                </div>
+                <!-- Пример маркировки с картинки -->
+                <div
+                    style="margin-top: 30px; background: #f9f9f9; padding: 20px; border-radius: 20px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-around; align-items: center;">
+                    <div><span style="font-weight: bold;">GTIN:</span> 8141904045</div>
+                    <div><span style="font-weight: bold;">UID:</span> 873767438899</div>
+                    <div><span style="font-weight: bold;">EXP:</span> 2020-12-31</div>
+                    <div><span style="font-weight: bold;">Lot:</span> 89754B</div>
+                    <div style="background: #000; color: white; padding: 10px 20px;">04201 13:28:30</div>
                 </div>
             </section>
 
@@ -286,13 +342,13 @@
                     </div>
                     <div class="resource-item">
                         <img src="../assets/images/Медаль.svg" alt="BROCHURE">
-                        <h4>Брошюра RNJet 100+</h4>
+                        <h4>Брошюра RNJet 200</h4>
                         <a href="#" style="color: var(--red);">Скачать</a>
                     </div>
                     <div class="resource-item">
                         <img src="../assets/images/Гайка.svg" alt="VIDEO">
                         <h4>Видеообзор</h4>
-                        <a href="https://www.youtube.com/embed/a0FH8S5d1I0" style="color: var(--red);">Смотреть на
+                        <a href="https://www.youtube.com/embed/MhbYfwxOhOo" style="color: var(--red);">Смотреть на
                             YouTube</a>
                     </div>
                 </div>
@@ -378,14 +434,6 @@
         </div>
     </main>
     <script src="../scripts/index.js"></script>
-    <script>
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    </script>
 </body>
 
 </html>
