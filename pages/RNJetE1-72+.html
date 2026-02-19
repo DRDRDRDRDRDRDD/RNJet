@@ -372,6 +372,27 @@
                 </div>
             </section>
 
+            <!-- Блок с формой подписки -->
+            <section class="contact-form-section">
+                <h2>Остались вопросы?</h2>
+                <form class="contact-form" action="mailto:office@insoftretail.ru" method="post" enctype="text/plain">
+                    <div class="form-row">
+                        <input type="text" placeholder="Имя" class="form-input" name="firstname" required>
+                        <input type="text" placeholder="Фамилия" class="form-input" name="lastname" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" placeholder="Почта" class="form-input full-width" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <textarea placeholder="Текст сообщения" class="form-textarea" rows="4" name="message"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit-btn">ОТПРАВИТЬ ВОПРОС</button>
+                    <p style="margin-top: 15px; font-size: 14px; color: #666;">Ваше сообщение будет отправлено на почту:
+                        office@insoftretail.ru</p>
+                </form>
+            </section>
+
             <!-- Блок с контактами -->
             <section class="contact-info-section" style="margin-top: 80px;">
                 <div class="contact-info-grid">
@@ -405,14 +426,6 @@
         </div>
     </main>
     <script src="../scripts/index.js"></script>
-    <script>
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    </script>
 </body>
 
 </html>
